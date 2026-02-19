@@ -42,6 +42,12 @@ return [
             'synchronous' => null,
             'transaction_mode' => 'DEFERRED',
         ],
+        
+        'mongodb' => [
+        'driver' => 'mongodb',
+        'dsn' => env('MONGODB_URI', 'mongodb+srv://Moath:Moath1998@laravel.n8sfdgp.mongodb.net/?appName=laravel'),
+        'database' => env('MONGODB_DATABASE', 'laravel'),
+        ],
 
         'mysql' => [
             'driver' => 'mysql',
